@@ -19,9 +19,8 @@ async function createRegion(region) {
     try {
         const response = await axios.post(`${API_URL}/region`, region, { headers });
         console.log(`Region created: ${region.name.ru}`);
-        console.log(response);
 
-        return response.data.id; // Assuming the API returns the region id
+        return response.data.result.id; // Assuming the API returns the region id
     } catch (error) {
         console.error(`Error creating region ${region.name.ru}:`, error);
         return null;
@@ -51,6 +50,7 @@ async function seedData() {
             }
         }
     }
+    console.log('successfully finished');
 }
 
 // Run the seed data process
