@@ -67,13 +67,13 @@ This repository contains a script for seeding regions and cities to an API. The 
 5. Run the script:
 
     ```bash
-    npm run seed
+    node src/app.js
     ```
 
     Or, if you're using yarn:
 
     ```bash
-    yarn seed
+    node src/app.js
     ```
 
 ## How It Works
